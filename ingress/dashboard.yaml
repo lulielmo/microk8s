@@ -15,9 +15,9 @@ spec:
   # https://kubernetes.io/docs/concepts/services-networking/ingress/
   # https://kubernetes.github.io/ingress-nginx/user-guide/tls/
   rules:
-  - http:
+    http:
       paths:
-      - path: /dashboard(/|$)(.*)
+        path: /dashboard(/|$)(.*)
         pathType: ImplementationSpecific
         backend:
           service:
